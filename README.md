@@ -1,5 +1,9 @@
 # learning-docker
 
+```
+docker pull kshitiijj/start-app
+```
+
 ## Docker cmd's
 
 To buid the Docker Image::
@@ -21,7 +25,7 @@ docker run -p 5000:5000 start-app
 ```
 
 ```
-docker run -d -t 5000:5000 'image_name'
+docker run -d -p 5000:5000 'image_name'
 ```
 
 * -d -> detach
