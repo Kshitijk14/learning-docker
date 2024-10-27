@@ -1,7 +1,7 @@
 # learning-docker
 
 ```
-docker pull kshitiijj/start-app
+docker pull kshitiijj/start-app:latest
 ```
 
 ## Docker cmd's
