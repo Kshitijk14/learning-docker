@@ -1,9 +1,15 @@
-FROM python:3.8-alpine
-
-COPY . /app
+FROM node:12
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+COPY package*.json ./
 
-CMD python app.py
+RUN npm install
+
+COPY . .
+
+ENV PORT=8080
+
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
